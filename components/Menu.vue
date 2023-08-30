@@ -62,7 +62,7 @@ const hasActiveChild = computed(() => {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    color: #383a41;
+    color: #393b42;
     padding: 8px 12px;
     font-size: 15px;
     cursor: pointer;
@@ -84,7 +84,7 @@ const hasActiveChild = computed(() => {
     align-items: center;
     width: 100%;
     gap: 8px;
-    color: #383a41;
+    color: #393b42;
     text-decoration: none;
     padding: 8px 12px;
     font-size: 15px;
@@ -101,7 +101,7 @@ const hasActiveChild = computed(() => {
 .mysidebar-link.active {
     background-color: rgba(27, 133, 255, 0.13);
     color: #016ae3;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .sub-menu.is-open {

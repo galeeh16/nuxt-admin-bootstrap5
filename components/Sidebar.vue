@@ -77,9 +77,9 @@ const menus = [
     },
     {
         id: '7',
-        url: '/',
+        url: '/test',
         name: 'Test',
-        icon: 'lucide:layout-dashboard',
+        icon: 'octicon:stack-24',
         sub_menu: []
     },
 ];

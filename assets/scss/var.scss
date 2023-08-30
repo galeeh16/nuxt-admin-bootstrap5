@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 // Default variable overrides
 $body-bg: #f2f5f7;
@@ -7,7 +8,7 @@ $font-size-root:              null !default;
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $font-size-sm:                $font-size-base * .875 !default;
 $font-size-lg:                $font-size-base * 1.25 !default;
-$font-family-sans-serif:  'Inter', sans-serif;
+$font-family-sans-serif:  'Poppins', sans-serif;
 
 // scss-docs-start color-variables
 $blue:    #1b86ff !default;
@@ -17,7 +18,7 @@ $pink:    #d63384 !default;
 $red:     #dc3545 !default;
 $orange:  #fda414 !default;
 $yellow:  #f5b905 !default;
-$green:   #0ba85f !default;
+$green:   #0fb872 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
 // scss-docs-end color-variables
