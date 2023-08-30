@@ -9,5 +9,5 @@ module.exports = {
             script: './.output/server/index.mjs', // ini biarin aja (hasil build nuxtnya diexec)
         }
     ]
-}
+} 
   
