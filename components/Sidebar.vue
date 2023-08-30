@@ -75,5 +75,12 @@ const menus = [
             },
         ]
     },
+    {
+        id: '7',
+        url: '/',
+        name: 'Test',
+        icon: 'lucide:layout-dashboard',
+        sub_menu: []
+    },
 ];
 </script>
