@@ -1,0 +1,16 @@
+// Input Text
+$input-bg: #fff;
+$input-border-color:  #d3dae4;
+$form-check-input-border: 1px solid #d3dae4;
+$form-range-track-bg: #e2e7ec;
+$input-placeholder-color: #a8b1bc;
+// $input-box-shadow: none;
+// $input-focus-box-shadow: none;
+
+// Select
+// $form-select-box-shadow: none;
+// $form-select-focus-box-shadow: none;
+
+input[type="text"]:read-only {
+    background-color: #ebeff5;
+}
