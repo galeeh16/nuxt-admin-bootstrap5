@@ -12,24 +12,9 @@
                         </button>
                     </div>
 
-                    <div class="d-flex align-items-center gap-3">
-                        <div class="dropdown">
-                            <div class="d-flex gap-2 dropdown-header dropdown-toggle" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <div class="position-relative">
-                                    <div class="count-notif">
-                                        12
-                                    </div>
-                                    <Icon name="mingcute:notification-line" size="24" class="text-secondary" />
-                                </div>
-                            </div>
+                    <div class="d-flex align-items-center" style="gap: 20px;">
+                        <Notification />
 
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
                         <div class="dropdown">
                             <div class="d-flex gap-2 dropdown-header dropdown-toggle" data-bs-toggle="dropdown"
                                 aria-expanded="false">
