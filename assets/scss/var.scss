@@ -15,7 +15,7 @@ $blue:    #1b91ff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
-$red:     #dc3567 !default;
+$red:     #dc354e !default;
 $orange:  #fda414 !default;
 $yellow:  #f5b905 !default;
 $green:   #0fb872 !default;
@@ -28,16 +28,71 @@ $primary:       $blue !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $orange !default;
-$danger:        $pink !default;
+$danger:        $red !default;
 // scss-docs-end theme-color-variables
 
 .btn-primary, .btn-success, .btn-danger, .btn-warning {
     color: #fff !important; 
 }
 
+.text-danger {
+    font-size: 15px;
+}
 
 $focus-ring-width:      .2rem !default;
 $focus-ring-opacity:    .2 !default;
 $focus-ring-blur:       0 !default;
 $focus-ring-color:      rgba($primary, $focus-ring-opacity) !default;
 $focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color !default;
+
+.btn-bars {
+    background: transparent;
+    outline: none !important;
+    border: none !important;
+    padding: 0;
+    margin: 0;
+    display: none;
+    margin-right: 0;
+}
+
+@media screen and (min-width: 990px) {
+    .btn-bars {
+        background: transparent;
+        outline: none !important;
+        border: none !important;
+        padding: 0;
+        margin: 0;
+        margin-right: 13px;
+        margin-top: -6px;
+        display: block;
+        transform: scale(0.82);
+    }
+    .btn-bars span {
+        width: 30px;
+        height: 2px;
+        display: block;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        background-color: black;
+        transition-property: all;
+        transition-duration: 380ms;
+        transition-timing-function: ease-in-out;
+    }
+    .btn-bars span:nth-child(1) {
+        transform-origin: top left;
+    }
+    .btn-bars span:nth-child(3) {
+        transform-origin: bottom left;
+    }
+
+    .btn-bars.active > span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+    .btn-bars.active > span:nth-child(2) {
+        transform: scale(0);
+    }
+    .btn-bars.active > span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+}

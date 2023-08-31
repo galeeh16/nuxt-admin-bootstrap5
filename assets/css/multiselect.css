@@ -1,0 +1,82 @@
+:root {
+    --ms-font-size: 15px;
+    --ms-line-height: 1.5;
+    --ms-bg: #FFFFFF;
+    --ms-bg-disabled: #F3F4F6;
+    --ms-border-color: #d3dae4;
+    --ms-border-width: 1px;
+    --ms-border-color-active: rgba(27, 145, 255, 0.6);
+    --ms-border-width-active: 1px;
+    --ms-radius: 6px;
+    --ms-py: 0.375rem;
+    --ms-px: 0.75rem;
+    --ms-ring-width: 3px;
+    --ms-ring-color: rgba(27, 145, 255, .2);
+    --ms-placeholder-color: #a8b1bc;
+    --ms-max-height: 10rem;
+
+    --ms-spinner-color: #1b91ff;
+    --ms-caret-color: #a2a8b0;
+    --ms-clear-color: #a2a8b0;
+    --ms-clear-color-hover: #000000;
+    
+    --ms-tag-font-size: 0.875rem;
+    --ms-tag-line-height: 1.25rem;
+    --ms-tag-font-weight: 600;
+    /* --ms-tag-bg: #1072b9; */
+    --ms-tag-bg: #1b91ff;
+    --ms-tag-bg-disabled: #a8b1bc;
+    --ms-tag-color: #FFFFFF;
+    --ms-tag-color-disabled: #FFFFFF;
+    --ms-tag-radius: 4px;
+    --ms-tag-py: 0.125rem;
+    --ms-tag-px: 0.5rem;
+    --ms-tag-my: 0.25rem;
+    --ms-tag-mx: 0.25rem;
+
+    --ms-tag-remove-radius: 4px;
+    --ms-tag-remove-py: 0.25rem;
+    --ms-tag-remove-px: 0.25rem;
+    --ms-tag-remove-my: 0rem;
+    --ms-tag-remove-mx: 0.125rem;
+
+    --ms-dropdown-bg: #FFFFFF;
+    --ms-dropdown-border-color: #D1D5DB;
+    --ms-dropdown-border-width: 1px;
+    --ms-dropdown-radius: 4px;
+
+    --ms-group-label-py: 0.3rem;
+    --ms-group-label-px: 0.75rem;
+    --ms-group-label-line-height: 1.375;
+    --ms-group-label-bg: #E5E7EB;
+    --ms-group-label-color: #374151;
+    --ms-group-label-bg-pointed: #D1D5DB;
+    --ms-group-label-color-pointed: #374151;
+    --ms-group-label-bg-disabled: #F3F4F6;
+    --ms-group-label-color-disabled: #D1D5DB;
+    --ms-group-label-bg-selected: #059669;
+    --ms-group-label-color-selected: #FFFFFF;
+    --ms-group-label-bg-selected-pointed: #1b91ff;
+    --ms-group-label-color-selected-pointed: #FFFFFF;
+    --ms-group-label-bg-selected-disabled: #1b91ff;
+    --ms-group-label-color-selected-disabled: #D1FAE5;
+
+    --ms-option-font-size: 15px;
+    --ms-option-line-height: 1.375;
+    --ms-option-bg-pointed: rgba(27, 133, 255, 0.13);
+    --ms-option-color-pointed: #1b91ff;
+    /* --ms-option-bg-selected: #1072b9; */
+    --ms-option-bg-selected: rgba(27, 133, 255, 0.13);
+    /* --ms-option-color-selected: #FFFFFF; */
+    --ms-option-color-selected: #1b91ff;
+    --ms-option-bg-disabled: #FFFFFF;
+    --ms-option-color-disabled: #D1D5DB;
+    --ms-option-bg-selected-pointed: rgba(27, 133, 255, 0.13); /** bg Ketika yg selected di hover */
+    --ms-option-color-selected-pointed: #1b91ff; /** color Ketika yg selected di hover */
+    --ms-option-bg-selected-disabled: #FFFFFF;
+    --ms-option-color-selected-disabled: #D1FAE5;
+    --ms-option-py: 0.5rem;
+    --ms-option-px: 0.75rem;
+
+    --ms-empty-color: #4B5563;
+}

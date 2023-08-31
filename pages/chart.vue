@@ -32,14 +32,12 @@
 <script setup>
 const options = ref({
     chart: {
-        id: 'vuechart-example',
+        id: 'vuechart1-example',
         fontFamily: 'Poppins, sans-serif',
         toolbar: {
             show: false
         },
-    },
-    legend: {
-        show: true,
+        parentHeightOffset: 0,
     },
     xaxis: {
         categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
@@ -71,7 +69,7 @@ const series = ref([{
 
 const optionsTwo = ref({
     chart: {
-        id: 'vuechart-example',
+        id: 'vuechart2-example',
         fontFamily: 'Poppins, sans-serif',
         toolbar: {
             show: false
@@ -81,9 +79,9 @@ const optionsTwo = ref({
     xaxis: {
         categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
     },
-    colors: ['#1b91ff', '#d63384'], // untuk warna dot dibawah chart
+    colors: ['#1b91ff', '#dc3567'], // untuk warna dot dibawah chart
     fill: {
-        colors: ['#1b91ff', '#d63384'], // warna chart
+        colors: ['#1b91ff', '#dc3567'], // warna chart
         type: 'gradient',
         gradient: {
             opacityFrom: 0.7,
@@ -104,20 +102,9 @@ const optionsTwo = ref({
             sizeOffset: 1
         }
     },
-    legend: {
-        position: 'top',
-        horizontalAlign: 'left',
-        fontSize: '12px',
-        markers: {
-            radius: 40,
-            width: 10,
-            height: 10
-        },
-        itemMargin: {
-            horizontal: 10,
-            vertical: 20
-        },
-    },
+    legends: {
+        show: false
+    }
 });
 
 const seriesTwo = ref([

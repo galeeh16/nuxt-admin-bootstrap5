@@ -9,10 +9,11 @@ export default defineNuxtPlugin({
     },
     hooks: {
         'app:mounted'() {
-            const btnHamburger = document.querySelector('.btn-toggle-sidebar');
+            const btnBars = document.querySelector('.btn-bars');
             const app = document.querySelector('#app');
 
-            btnHamburger?.addEventListener('click', function() {
+            btnBars?.addEventListener('click', function() {
+                btnBars?.classList.toggle('active');
                 app.classList.toggle('is-toggled');
             });
         }
