@@ -24,6 +24,13 @@ const menus = [
         sub_menu: []
     },
     {
+        id: 'chart',
+        url: '/chart',
+        name: 'Chart',
+        icon: 'ph:chart-bar',
+        sub_menu: []
+    },
+    {
         id: '3',
         name: 'Settings',
         url: null,

@@ -11,11 +11,11 @@ $font-size-lg:                $font-size-base * 1.25 !default;
 $font-family-sans-serif:  'Poppins', sans-serif;
 
 // scss-docs-start color-variables
-$blue:    #1b86ff !default;
+$blue:    #1b91ff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
-$red:     #dc3545 !default;
+$red:     #dc3567 !default;
 $orange:  #fda414 !default;
 $yellow:  #f5b905 !default;
 $green:   #0fb872 !default;
@@ -28,7 +28,7 @@ $primary:       $blue !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $orange !default;
-$danger:        $red !default;
+$danger:        $pink !default;
 // scss-docs-end theme-color-variables
 
 .btn-primary, .btn-success, .btn-danger, .btn-warning {
