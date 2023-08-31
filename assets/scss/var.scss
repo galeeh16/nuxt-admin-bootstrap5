@@ -3,7 +3,7 @@
 
 // Default variable overrides
 $body-bg: #f2f5f7;
-$body-color: #313944;
+$body-color: #3a3f46;
 $font-size-root:              null !default;
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $font-size-sm:                $font-size-base * .875 !default;
@@ -30,6 +30,28 @@ $info:          $cyan !default;
 $warning:       $orange !default;
 $danger:        $red !default;
 // scss-docs-end theme-color-variables
+
+$lightPrimary: rgba(27, 145, 255, 0.18);
+$lightSuccess: rgba(15, 184, 114, 0.16);
+$lightDanger: rgba(220, 53, 78, 0.18);
+$lightInfo: rgba(13, 202, 240, 0.18);
+$lightWarning: rgba(253, 164, 20, 0.18);
+
+.bg-light-primary {
+    background-color: $lightPrimary;
+}
+.bg-light-success {
+    background-color: $lightSuccess;
+}
+.bg-light-danger {
+    background-color: $lightDanger;
+}
+.bg-light-warning {
+    background-color: $lightWarning;
+}
+.bg-light-info {
+    background-color: $lightInfo;
+}
 
 .btn-primary, .btn-success, .btn-danger, .btn-warning {
     color: #fff !important; 

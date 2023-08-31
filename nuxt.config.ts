@@ -7,8 +7,8 @@ export default defineNuxtConfig({
   ssr: true,
   app: {
     head: {
-      title: 'Admin Bootstrap 5'
-    }
+      title: 'Admin Bootstrap 5',
+    },
   },
   css: [
     '~/assets/scss/style.scss'

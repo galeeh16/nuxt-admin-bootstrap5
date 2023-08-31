@@ -31,6 +31,13 @@ const menus = [
         sub_menu: []
     },
     {
+        id: 'table',
+        url: '/table',
+        name: 'Table',
+        icon: 'octicon:stack-24',
+        sub_menu: []
+    },
+    {
         id: 'form',
         url: '/form',
         name: 'Form Input',
