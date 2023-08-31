@@ -117,4 +117,36 @@ $focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color
         transform: rotate(-45deg);
     }
 
+    .dropdown-header {
+        cursor: pointer;
+        &.dropdown-toggle::after {
+            display: none;
+        }
+        &~.dropdown-menu {
+            li {
+                a {
+                    padding: 0.8rem 1rem;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .count-notif {
+            display: inline-block;
+            font-size: 10px;
+            position: absolute;
+            right: -3px;
+            top: -5px;
+            width: 17px;
+            height: 17px;
+            line-height: 17px;
+            text-align: center;
+            background: $danger;
+            color: white;
+            font-weight: 500;
+            border-radius: 17px;
+        }
+
+    }
+
 }

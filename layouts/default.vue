@@ -3,25 +3,52 @@
         <Sidebar />
         <div id="content">
             <div class="header">
-                <div class="d-flex justify-content-between w-100">
+                <div class="d-flex align-items-center justify-content-between w-100">
                     <div>
                         <button type="button" class="btn-bars">
                             <span></span>
                             <span></span>
                             <span></span>
                         </button>
-                        <!-- <button type="button" class="btn-toggle-sidebar">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
-                                <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="4">
-                                    <path d="M7.94971 11.9497H39.9497" />
-                                    <path d="M7.94971 23.9497H39.9497" />
-                                    <path d="M7.94971 35.9497H39.9497" />
-                                </g>
-                            </svg>
-                        </button> -->
                     </div>
-                    <div>USERNAME</div>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="dropdown">
+                            <div class="d-flex gap-2 dropdown-header dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <div class="position-relative">
+                                    <div class="count-notif">
+                                        12
+                                    </div>
+                                    <Icon name="mingcute:notification-line" size="24" class="text-secondary" />
+                                </div>
+                            </div>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <div class="d-flex gap-2 dropdown-header dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="/profile.webp" class="rounded-circle" style="width: 44px; height: 44px;"
+                                    alt="Profile">
+                                <div>
+                                    <div class="fw-semibold text-secondary">001GALIHAJ</div>
+                                    <div style="font-size: 13px;">galih@example.com</div>
+                                </div>
+                            </div>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="content">
