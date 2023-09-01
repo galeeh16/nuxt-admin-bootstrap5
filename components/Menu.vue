@@ -1,14 +1,14 @@
 <template>
     <nuxt-link class="mysidebar-link" :class="{ 'active': route.path === menu.url }" v-if="!menu.sub_menu.length"
         :to="menu.url">
-        <Icon v-if="menu.icon" :name="menu.icon" />
+        <Icon v-if="menu.icon" :name="menu.icon" size="18" />
         {{ menu.name }}
     </nuxt-link>
 
     <Disclosure as="div" v-else v-slot="{ open }" :default-open="hasActiveChild">
         <DisclosureButton as="div" class="mysidebar-item">
             <div class="left">
-                <Icon v-if="menu.icon" :name="menu.icon" />
+                <Icon v-if="menu.icon" :name="menu.icon" size="18" />
                 {{ menu.name }}
             </div>
             <Icon name="bi:chevron-right" class="transition opacity-70" :class="{ 'rotate-90': open }"
@@ -62,7 +62,7 @@ const hasActiveChild = computed(() => {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    color: #393b42;
+    color: #60646f;
     padding: 8px 12px;
     font-size: 15px;
     cursor: pointer;
@@ -84,7 +84,7 @@ const hasActiveChild = computed(() => {
     align-items: center;
     width: 100%;
     gap: 8px;
-    color: #393b42;
+    color: #60646f;
     text-decoration: none;
     padding: 8px 12px;
     font-size: 15px;

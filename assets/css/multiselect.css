@@ -41,7 +41,7 @@
     --ms-tag-remove-mx: 0.125rem;
 
     --ms-dropdown-bg: #FFFFFF;
-    --ms-dropdown-border-color: #D1D5DB;
+    --ms-dropdown-border-color: #f1f4f5;
     --ms-dropdown-border-width: 1px;
     --ms-dropdown-radius: 4px;
 
@@ -64,19 +64,24 @@
     --ms-option-font-size: 15px;
     --ms-option-line-height: 1.375;
     --ms-option-bg-pointed: rgba(27, 133, 255, 0.13);
-    --ms-option-color-pointed: #1b91ff;
+    --ms-option-color-pointed: #0a7de9;
     /* --ms-option-bg-selected: #1072b9; */
     --ms-option-bg-selected: rgba(27, 133, 255, 0.13);
     /* --ms-option-color-selected: #FFFFFF; */
-    --ms-option-color-selected: #1b91ff;
+    --ms-option-color-selected: #0a7de9;
     --ms-option-bg-disabled: #FFFFFF;
     --ms-option-color-disabled: #D1D5DB;
     --ms-option-bg-selected-pointed: rgba(27, 133, 255, 0.13); /** bg Ketika yg selected di hover */
-    --ms-option-color-selected-pointed: #1b91ff; /** color Ketika yg selected di hover */
+    --ms-option-color-selected-pointed: #0a7de9; /** color Ketika yg selected di hover */
     --ms-option-bg-selected-disabled: #FFFFFF;
     --ms-option-color-selected-disabled: #D1FAE5;
     --ms-option-py: 0.5rem;
     --ms-option-px: 0.75rem;
 
     --ms-empty-color: #4B5563;
+}
+
+.multiselect .multiselect-dropdown {
+    overflow: auto;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }

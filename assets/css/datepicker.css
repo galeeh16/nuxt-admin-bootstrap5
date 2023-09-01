@@ -1,6 +1,6 @@
 :root {
     /*General*/
-    --dp-font-family: 'Poppins', sans-serif;
+    --dp-font-family: 'Public Sans', sans-serif;
     --dp-border-radius: 6px; /*Configurable border-radius*/
     --dp-cell-border-radius: 4px; /*Specific border radius for the calendar cell*/
     --dp-common-transition: all 0.1s ease-in; /*Generic transition applied on buttons and calendar cells*/
@@ -45,7 +45,7 @@
    --dp-primary-text-color: #f8f5f5;
    --dp-secondary-color: #c0c4cc;
    --dp-border-color: #d3dae4;
-   --dp-menu-border-color: #d3dae4;
+   --dp-menu-border-color: #fff;
    --dp-border-color-hover: #d3dae4;
    --dp-disabled-color: #f6f6f6;
    --dp-scroll-bar-background: #f3f3f3;
@@ -60,4 +60,10 @@
 .close-calendar {
     width: 26px;
     height: 26px;
+}
+
+.dp__outer_menu_wrap.dp--menu-wrapper {
+    border-radius: 8px;
+    border: 1px solid #f1f4f5;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }

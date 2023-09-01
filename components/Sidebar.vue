@@ -20,35 +20,35 @@ const menus = [
         id: '1',
         url: '/',
         name: 'Dashboard',
-        icon: 'lucide:layout-dashboard',
+        icon: 'bx:home',
         sub_menu: []
     },
     {
         id: 'chart',
         url: '/chart',
         name: 'Chart',
-        icon: 'ph:chart-bar',
+        icon: 'bx:bar-chart-alt-2',
         sub_menu: []
     },
     {
         id: 'table',
         url: '/table',
         name: 'Table',
-        icon: 'octicon:stack-24',
+        icon: 'bx:layer',
         sub_menu: []
     },
     {
         id: 'form',
         url: '/form',
         name: 'Form Input',
-        icon: 'octicon:stack-24',
+        icon: 'bx:layer',
         sub_menu: []
     },
     {
         id: '3',
         name: 'Settings',
         url: null,
-        icon: 'bi:gear',
+        icon: 'bx:cog',
         sub_menu: [
             {
                 id: '3.1',
@@ -85,7 +85,7 @@ const menus = [
         id: '2',
         url: null,
         name: 'Data',
-        icon: 'octicon:stack-24',
+        icon: 'bx:layer',
         sub_menu: [
             {
                 id: '2.1',
@@ -100,7 +100,7 @@ const menus = [
         id: '7',
         url: '/test',
         name: 'Test',
-        icon: 'octicon:stack-24',
+        icon: 'bx:layer',
         sub_menu: []
     },
 ];

@@ -21,7 +21,7 @@
                                 <img src="/profile.webp" class="rounded-circle" style="width: 44px; height: 44px;"
                                     alt="Profile">
                                 <div>
-                                    <div class="fw-semibold text-secondary">001GALIHAJ</div>
+                                    <div class="fw-semibold text-gray">001GALIHAJ</div>
                                     <div style="font-size: 13px;">galih@example.com</div>
                                 </div>
                             </div>

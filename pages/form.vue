@@ -8,19 +8,19 @@
                 <div class="card-body">
                     <Form method="post" @submit="handleSubmit" :validation-schema="schema" v-slot="{ values }">
 
-                        <div class=" mb-4">
+                        <div class=" mb-3">
                             <label for="" class="col-form-label">Username</label>
                             <Field type="text" name="username" label="Username Label" class="form-control" />
                             <ErrorMessage as="div" class="text-danger mt-1" name="username" />
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-3">
                             <label for="" class="col-form-label">Full Name</label>
                             <Field type="text" name="full_name" label="Wkwkwk" class="form-control" />
                             <ErrorMessage as="div" class="text-danger mt-1" name="full_name" />
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-3">
                             <label for="" class="col-form-label">Age</label>
                             <Field v-slot="{ field }" name="age" label="Age Label">
                                 <input type="text" name="age" label="Age Label" v-bind="field" class="form-control" />
@@ -28,7 +28,7 @@
                             <ErrorMessage as="div" class="text-danger mt-1" name="age" />
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-3">
                             <label for="" class="col-form-label">Film</label>
                             <Field as="Multiselect" name="film" v-slot="{ field }">
                                 <Multiselect v-bind="field" :options="filmOption" placeholder="Pilih Film" />
@@ -36,7 +36,7 @@
                             <ErrorMessage as="div" class="text-danger mt-1" name="film" />
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-3">
                             <label for="tanggal" class="col-form-label">Birth of Date</label>
                             <Field as="VueDatePicker" v-slot="{ field }" name="birth_of_date">
                                 <VueDatePicker v-bind="field" placeholder="Pilih tanggal..." name="birth_of_date"
@@ -51,7 +51,7 @@
                             <ErrorMessage as="div" class="text-danger mt-1" name="birth_of_date" />
                         </div>
 
-                        <div class="mb-4">
+                        <div class="mb-3">
                             <div>
                                 <label for="" class="col-form-label">Gender</label>
                             </div>

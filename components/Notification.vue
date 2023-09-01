@@ -2,18 +2,18 @@
     <div class="dropdown">
         <div class="d-flex gap-2 dropdown-header dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <div class="position-relative">
-                <div class="count-notif">
-                    12
+                <div class="count-notif" v-if="countNotif > 0">
+                    {{ countNotif }}
                 </div>
-                <Icon name="mingcute:notification-line" size="24" class="text-secondary" />
+                <Icon name="mingcute:notification-line" size="24" class="text-gray" />
             </div>
         </div>
 
         <div class="dropdown-menu menu-notif">
             <div class="dropdown-item-header">
                 <div class="d-flex align-items-center justify-content-between">
-                    <div>You have 21 notifications</div>
-                    <div><a href="#">View all</a></div>
+                    <div>You have {{ countNotif }} notifications</div>
+                    <div><a href="#" @click="viewAllNotif">View all</a></div>
                 </div>
             </div>
             <div>
@@ -24,7 +24,7 @@
                     <div class="notif-item-right">
                         <div>{{ notif.desc }}</div>
                         <div class="d-flex align-items-center notif-time mt-1" style="gap: 4px;">
-                            <Icon name="ic:baseline-access-time" size="12" style="color: #88909e;" />
+                            <Icon name="ic:baseline-access-time" size="11" style="color: #88909e;" />
                             <small class="notif-time-text">{{ notif.date }}</small>
                         </div>
                     </div>
@@ -35,6 +35,12 @@
 </template>
 
 <script setup>
+const countNotif = ref(12);
+
+const viewAllNotif = () => {
+    countNotif.value = 0;
+}
+
 const notifications = ref([
     {
         id: 1,

@@ -1,14 +1,15 @@
 // @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap');
 
 // Default variable overrides
 $body-bg: #f2f5f7;
-$body-color: #3a3f46;
+$body-color: #42474e;
 $font-size-root:              null !default;
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $font-size-sm:                $font-size-base * .875 !default;
 $font-size-lg:                $font-size-base * 1.25 !default;
-$font-family-sans-serif:  'Poppins', sans-serif;
+$font-family-sans-serif:  'Public Sans', sans-serif;
 
 // scss-docs-start color-variables
 $blue:    #1b91ff !default;
@@ -60,7 +61,9 @@ $lightWarning: rgba(253, 164, 20, 0.18);
 .text-danger {
     font-size: 15px;
 }
-
+.text-gray {
+    color: #989da7 !important;
+}
 $focus-ring-width:      .2rem !default;
 $focus-ring-opacity:    .2 !default;
 $focus-ring-blur:       0 !default;
@@ -95,7 +98,7 @@ $focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color
         display: block;
         margin-top: 8px;
         margin-bottom: 8px;
-        background-color: black;
+        background-color: #292b2f;
         transition-property: all;
         transition-duration: 380ms;
         transition-timing-function: ease-in-out;
