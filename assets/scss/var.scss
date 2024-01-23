@@ -1,6 +1,6 @@
-// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap');
 
 // Default variable overrides
 $body-bg: #f2f5f7;
@@ -9,17 +9,19 @@ $font-size-root:              null !default;
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $font-size-sm:                $font-size-base * .875 !default;
 $font-size-lg:                $font-size-base * 1.25 !default;
-$font-family-sans-serif:  'Public Sans', sans-serif;
+$font-family-sans-serif:  'Inter', sans-serif;
 
 // scss-docs-start color-variables
-$blue:    #1b91ff !default;
+// $blue:    #1b91ff !default;
+$blue:    #6610f2 !default;
+// $blue:    #A53B3B !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
 $red:     #dc354e !default;
 $orange:  #fda414 !default;
 $yellow:  #f5b905 !default;
-$green:   #0fb872 !default;
+$green:   #0daa60 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
 // scss-docs-end color-variables
@@ -32,11 +34,14 @@ $warning:       $orange !default;
 $danger:        $red !default;
 // scss-docs-end theme-color-variables
 
-$lightPrimary: rgba(27, 145, 255, 0.18);
-$lightSuccess: rgba(15, 184, 114, 0.16);
+$lightPrimary: rgba(102, 16, 242, .15);
+// $lightPrimary: rgba(165, 59, 59, 0.13);
+$lightSuccess: rgba(13, 170, 96, .15);
 $lightDanger: rgba(220, 53, 78, 0.18);
 $lightInfo: rgba(13, 202, 240, 0.18);
 $lightWarning: rgba(253, 164, 20, 0.18);
+$lightDark: rgba(50, 50, 50, 0.18);
+
 
 .bg-light-primary {
     background-color: $lightPrimary;
@@ -52,6 +57,28 @@ $lightWarning: rgba(253, 164, 20, 0.18);
 }
 .bg-light-info {
     background-color: $lightInfo;
+}
+
+.btn-primary {
+    box-shadow: 0 2px 4px 0 rgba(102, 16, 242, .4);
+}
+.btn-success {
+    box-shadow: 0 2px 4px 0 rgba(13, 170, 96, .4);
+}
+.btn-danger {
+    box-shadow: 0 2px 4px 0 rgba(220, 53, 78, 0.4);
+}
+.btn-warning {
+    box-shadow: 0 2px 4px 0 rgba(253, 164, 20, 0.4);
+}
+.btn-info {
+    box-shadow: 0 2px 4px 0 rgba(13, 202, 240, 0.4);
+}
+.btn-dark {
+    box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.4);
+}
+.btn-secondary {
+    box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.4);
 }
 
 .btn-primary, .btn-success, .btn-danger, .btn-warning {

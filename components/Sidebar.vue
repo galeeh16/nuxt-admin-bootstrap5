@@ -14,7 +14,7 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const menus = [
     {
         id: '1',
@@ -55,7 +55,30 @@ const menus = [
                 url: '/profile',
                 name: 'Profile',
                 icon: null,
-                sub_menu: []
+                sub_menu: [
+                    {
+                        id: '3.1',
+                        url: '/profile',
+                        name: 'Profile 2',
+                        icon: null,
+                        sub_menu: [
+                            {
+                                id: '3.1',
+                                url: '/profile',
+                                name: 'Profile 2',
+                                icon: null,
+                                sub_menu: []
+                            }
+                        ]
+                    },
+                    {
+                        id: '3.1',
+                        url: '/profile',
+                        name: 'Profile 2',
+                        icon: null,
+                        sub_menu: []
+                    },
+                ]
             },
             {
                 id: '3.2222',
@@ -78,6 +101,48 @@ const menus = [
                         sub_menu: []
                     },
                 ]
+            },
+            {
+                id: '3.2222',
+                url: '/transactions',
+                name: 'Transactions',
+                icon: null,
+                sub_menu: []
+            },
+            {
+                id: '3.2222',
+                url: '/transactions',
+                name: 'Transactions',
+                icon: null,
+                sub_menu: []
+            },
+            {
+                id: '3.2222',
+                url: '/transactions',
+                name: 'Transactions',
+                icon: null,
+                sub_menu: []
+            },
+            {
+                id: '3.2222',
+                url: '/transactions',
+                name: 'Transactions',
+                icon: null,
+                sub_menu: []
+            },
+            {
+                id: '3.2222',
+                url: '/transactions',
+                name: 'Transactions',
+                icon: null,
+                sub_menu: []
+            },
+            {
+                id: '3.2222',
+                url: '/transactions',
+                name: 'Transactions',
+                icon: null,
+                sub_menu: []
             },
         ]
     },

@@ -1,5 +1,5 @@
 <template>
-    <nuxt-link class="mysidebar-link" :class="{ 'active': route.path === menu.url }" v-if="!menu.sub_menu.length"
+    <nuxt-link class="mysidebar-link" :class="{ 'active': route.path === menu.url }" v-if="!menu.sub_menu?.length"
         :to="menu.url">
         <Icon v-if="menu.icon" :name="menu.icon" size="18" />
         {{ menu.name }}
@@ -24,23 +24,30 @@
     </Disclosure>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {
     Disclosure,
     DisclosureButton,
     DisclosurePanel,
 } from '@headlessui/vue';
+import { MenuProps } from '@/types';
 
 const route = useRoute();
 
-const props = defineProps({
-    menu: Object
-});
+const props = defineProps<{
+    menu: {
+        id: string,
+        url: string,
+        name: string,
+        icon?: string,
+        sub_menu?: Array<MenuProps>
+    }
+}>();
 
 const hasActiveChild = computed(() => {
-    return props.menu?.sub_menu?.some(item => {
+    return props.menu?.sub_menu?.some((item: MenuProps) => {
         return item.url === route.path;
-    });;
+    });
 });
 </script>
 
@@ -99,9 +106,12 @@ const hasActiveChild = computed(() => {
 }
 
 .mysidebar-link.active {
-    background-color: rgba(27, 133, 255, 0.13);
-    color: #016ae3;
-    font-weight: 600;
+    background-color: rgba(102, 16, 242, .15);
+    /* background-color: rgba(165, 59, 59, 0.13); */
+    /* color: #016ae3; */
+    /* color: #A53B3B; */
+    color: #6610f2;
+    /* font-weight: 600; */
 }
 
 .sub-menu.is-open {

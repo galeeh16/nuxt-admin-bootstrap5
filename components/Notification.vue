@@ -34,8 +34,8 @@
     </div>
 </template>
 
-<script setup>
-const countNotif = ref(12);
+<script setup lang="ts">
+const countNotif = ref<number>(12);
 
 const viewAllNotif = () => {
     countNotif.value = 0;

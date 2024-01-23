@@ -48,7 +48,7 @@
 @import url('/assets/css/datepicker.css');
 </style>
 
-<script setup>
+<script setup lang="ts">
 import '@vuepic/vue-datepicker/dist/main.css';
 import '@vueform/multiselect/themes/default.css';
 </script>

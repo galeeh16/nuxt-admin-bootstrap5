@@ -52,7 +52,7 @@
                         <td class="py-3">{{ user.country }}</td>
                         <td class="py-3">{{ user.address }}</td>
                         <td class="py-3 text-center">
-                            <span class="badge bg-light-primary text-primary" v-if="user.status === 0">Active</span>
+                            <span class="badge bg-light-success text-success" v-if="user.status === 0">Active</span>
                             <span class="badge bg-light-danger text-danger" v-else>Inactive</span>
                         </td>
                         <td class="text-center">

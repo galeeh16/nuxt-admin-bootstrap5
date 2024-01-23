@@ -29,7 +29,7 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const options = ref({
     chart: {
         id: 'vuechart1-example',
@@ -43,7 +43,7 @@ const options = ref({
         categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
     },
     fill: {
-        colors: ['#1b91ff'] // warna chart
+        colors: ['#6610f2'] // warna chart
     },
     plotOptions: {
         bar: {
@@ -79,9 +79,9 @@ const optionsTwo = ref({
     xaxis: {
         categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
     },
-    colors: ['#1b91ff', '#dc3567'], // untuk warna dot dibawah chart
+    colors: ['#6610f2', '#0daa60'], // untuk warna dot dibawah chart
     fill: {
-        colors: ['#1b91ff', '#dc3567'], // warna chart
+        colors: ['#6610f2', '#0daa60'], // warna chart
         type: 'gradient',
         gradient: {
             opacityFrom: 0.7,
