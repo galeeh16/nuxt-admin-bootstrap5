@@ -1,27 +1,30 @@
 <template>
-    <nuxt-link class="mysidebar-link" :class="{ 'active': route.path === menu.url }" v-if="!menu.sub_menu?.length"
-        :to="menu.url">
-        <Icon v-if="menu.icon" :name="menu.icon" size="18" />
-        {{ menu.name }}
-    </nuxt-link>
+    <template v-if="!menu.sub_menu?.length">
+        <nuxt-link class="mysidebar-link" :class="{ 'active': route.path === menu.url }" :to="menu.url">
+            <Icon v-if="menu.icon" :name="menu.icon" size="18" />
+            {{ menu.name }}
+        </nuxt-link>
+    </template>
 
-    <Disclosure as="div" v-else v-slot="{ open }" :default-open="hasActiveChild">
-        <DisclosureButton as="div" class="mysidebar-item">
-            <div class="left">
-                <Icon v-if="menu.icon" :name="menu.icon" size="18" />
-                {{ menu.name }}
-            </div>
-            <Icon name="bi:chevron-right" class="transition opacity-70" :class="{ 'rotate-90': open }"
-                style="width: 13px; height: 13px;" />
-        </DisclosureButton>
-        <SlideDown :is-show="open">
-            <div class="ms-3 position-relative">
-                <DisclosurePanel>
-                    <Menu v-for="child in menu.sub_menu" :menu="child" />
-                </DisclosurePanel>
-            </div>
-        </SlideDown>
-    </Disclosure>
+    <template v-else>
+        <Disclosure v-slot="{ open }" :default-open="hasActiveChild">
+            <DisclosureButton class="mysidebar-item">
+                <div class="left">
+                    <Icon v-if="menu.icon" :name="menu.icon" size="18" />
+                    {{ menu.name }}
+                </div>
+                <Icon name="bi:chevron-right" class="transition opacity-70" :class="{ 'rotate-90': open }"
+                    style="width: 13px; height: 13px;" />
+            </DisclosureButton>
+            <SlideDown :is-show="open">
+                <div class="ms-3 position-relative">
+                    <DisclosurePanel>
+                        <Menu v-for="child in menu.sub_menu" :menu="child" />
+                    </DisclosurePanel>
+                </div>
+            </SlideDown>
+        </Disclosure>
+    </template>
 </template>
 
 <script setup lang="ts">

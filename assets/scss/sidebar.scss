@@ -1,5 +1,7 @@
 .sidebar-menu {
     padding: 1rem;
+    overflow-y: auto;
+    height: calc(100vh - 100px);
 }
 
 // lg
@@ -7,4 +9,26 @@
     .sidebar-menu {
         padding: 1.2rem;
     }
+}
+
+/* width */
+.sidebar-menu::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+.sidebar-menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.sidebar-menu::-webkit-scrollbar-thumb {
+    background: #d2bff0c2;
+    border-radius: 4px;
+}
+
+/* Handle on hover */
+.sidebar-menu::-webkit-scrollbar-thumb:hover {
+    // backgroun#7f45dc0f2;
+    background: #bca6deda;
 }
